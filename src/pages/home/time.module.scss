@@ -1,0 +1,80 @@
+.box{
+    text-align: left;
+    color:#222;
+  
+}
+.popover{
+    :global{
+        .ant-popover-arrow{
+            display: none;
+        }
+    }
+}
+.content{
+    width:200px;
+    :global{
+        .ant-row:first-child{
+            border-bottom: 1px solid #e8e8e8;
+            padding:0;
+        }
+        
+    }
+    .changeYear{
+        cursor: pointer;
+        line-height: 30px;
+        color:rgba(0,0,0,.25);
+        background-color: #fff;
+        border:none; 
+        &:hover{
+            color:#000;
+        } 
+    }
+    .year{
+        line-height: 30px;
+        text-align: center;
+    }
+    .yearHover{
+        cursor: pointer;
+    }
+    button{
+        &:focus{
+            outline: none;
+        }
+    }
+
+    .quarter{
+        margin:10px;
+        padding:5px;
+        border-radius: 4px;
+        text-align: center;
+        cursor: pointer;
+        &:hover{
+            color: #40a9ff;
+            background: #e6f7ff;
+        }
+    }
+    .currentQuarter{
+        color: #fff;
+        background: #1890ff;
+        &:hover{
+            color: #fff;
+            background: #1890ff;
+        }
+    }
+    .notAllowed{
+        cursor: not-allowed;
+        color:#999;
+        &:hover{
+            color:#999;
+        }
+    }
+    .gray{
+        color:#999;
+        cursor: not-allowed;
+        background-color: #f1f1f1;
+        &:hover{
+            color:#999;
+            background-color: #f1f1f1;
+        }
+    }
+}
